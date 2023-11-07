@@ -41,6 +41,8 @@ router.post('/', authorize, isAdmin, (req, res) => {
   return res.json(createdPizza);
 });
 
+//SLAY QUEEN
+
 // Delete a pizza from the menu based on its id
 router.delete('/:id', authorize, isAdmin, (req, res) => {
   const deletedPizza = deleteOnePizza(req.params.id);
